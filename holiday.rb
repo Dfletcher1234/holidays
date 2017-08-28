@@ -93,9 +93,9 @@ end
 
 startdate = Date.new(2017,07,31)
 us = Cohort.new(startdate)
-
+labourday = Date.new(2017,9,4)
 p us.last_day
 p us.no_lecture_on(startdate)
-p us.double_check_holiday(startdate)
+p us.double_check_holiday(labourday)
 
 # p us.class_days
