@@ -91,5 +91,11 @@ class Cohort
 
 end
 
+startdate = Date.new(2017,07,31)
+us = Cohort.new(startdate)
 
-us = Cohort.new(31/07/17)
+p us.last_day
+p us.no_lecture_on(startdate)
+p us.double_check_holiday(startdate)
+
+# p us.class_days
